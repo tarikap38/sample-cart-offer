@@ -14,4 +14,15 @@ public class OfferRequest {
     private int offer_value;
 
     private List<String> customer_segment;
+
+    public OfferRequest(int i, String flatx, int i1, List<String> segments) {
+        this.restaurant_id=i;
+        this.offer_type=flatx;
+        this.offer_value=i1;
+        this.customer_segment=segments;
+    }
+
+    public void setRestaurantId(int i) {
+        this.restaurant_id=i;
+    }
 }
